@@ -9,6 +9,8 @@ li>a{
 }
 img{
   width: 35%;
+  display: flex;
+  justify-content: space-between;
 }
 
 a:link{
@@ -67,6 +69,11 @@ nav .active {
 
 .pictureclass {
   transform: rotate(90deg);
+}
+
+.pictureclass2 {
+  transform: rotate(360deg)
+
 }
 
 .sr-only {
