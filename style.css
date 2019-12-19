@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Lobster&display=swap');
+
 p {
   font-family: 'Gochi Hand', cursive;
   font-size: 20px;
@@ -8,51 +9,48 @@ h2 {
   font-family: Lobster;
 }
 
-h1{
+h1 {
   color: maroon;
 }
 
-li>a{
+li>a {
   color: gold;
 }
 
-img{
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
+a:link {
+  color: Yellow;
 }
 
-a:link{
-  color: Pink;
-}
-
-a:visited{
+a:visited {
   color: gold;
 }
 
-a:hover{
+a:hover {
   color: gold;
 }
- a:active{
-   color: #FF4900;
- }
 
-/* begin nav bar */
+a:active {
+  color: #FF4900;
+}
+
 nav ul {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #4A0002;
-  border: 6px outset #C58300;
-border-radius: 40px 0px 40px 0px;
-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
-
+  border: 5px outset #C58300;
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 nav li {
-  float: left;
-  border-right:1px solid #bbb;
+  border-right: 1px solid #bbb;
 }
 
 nav li:last-child {
@@ -74,7 +72,6 @@ nav li a:hover:not(.active) {
 nav .active {
   background-color: #4CAF50;
 }
-/* end nav bar */
 
 .pictureclass {
   transform: rotate(90deg);
@@ -82,56 +79,339 @@ nav .active {
 
 .pictureclass2 {
   transform: rotate(360deg)
-
 }
 
 .sr-only {
-position: absolute;
-top: auto;
-left: -10000px;
-width: 1px;
-height: 1px;
-overflow: hidden;
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .roundimageclass {
   border-radius: 50%;
-  width: 290px;
-  height: 300px;
+  width: 70%;
 }
 
 .instrumentimagesclass {
-  /* width: 290px;
-  height: 300px; */
   width: 30%;
 }
 
 .trumpetclass {
-  /* width: 450px;
-  height: 300px; */
   width: 30%;
 }
 
 .fluteclass {
-  /* width: 530px;
-  height: 200px; */
   width: 30%
 }
 
 .clarinetclass {
-  /* width: 550px;
-  height: 200px; */
   width: 30%;
 }
 
 .tromboneclass {
-  /* width: 575px;
-  height: 395px; */
   width: 30%;
 }
 
 .percussionclass {
-  /* width: 315px;
-  height: 300px; */
   width: 30%
+}
+
+body {
+  width: 100vw;
+}
+
+main {
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+}
+
+.indexPageGrid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 100px;
+}
+
+.indexPageGrid main {
+  width: 100%;
+  height: 100%;
+}
+
+.gridIndex {
+  display: grid;
+  width: 70%;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  margin: auto;
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridIndex>* {
+  margin: auto;
+}
+
+.gridIndex>p {
+  padding: 10px;
+}
+
+.spanGrid {
+  grid-column: 1 / span 3;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.saxIns {
+  width: 50%;
+  background: red;
+  background-image: url(images/sax.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.saxIns p {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.saxIns img {
+  width: 100%;
+}
+
+.fluteIns {
+  width: 50%;
+  background: silver;
+  background-image: url(images/flute.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.fluteIns p {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.fluteIns img {
+  width: 100%;
+}
+
+.clarinetIns {
+  width: 50%;
+  background: darkblue;
+  background-image: url(images/clarinet.jpg);
+  background-size: cover;
+  background-blend-mode: lighten;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.clarinetIns p {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.clarinetIns img {
+  width: 100%;
+}
+
+.tromboneIns {
+  width: 50%;
+  background: yellow;
+  background-image: url(images/trombone.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.tromboneIns p {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.tromboneIns img {
+  width: 100%;
+}
+
+.trumpetIns {
+  width: 50%;
+  background: pink;
+  background-image: url(images/trumpet.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.trumpetIns p {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.trumpetIns img {
+  width: 100%;
+}
+
+.gridIns {
+  width: 70%;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  margin: auto;
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridAss {
+  width: 70%;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  margin: auto;
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #4A0002;
+  color: white;
+  text-align: center;
+  border: 6px outset #C58300;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4A0002;
+  color: white;
+  text-align: center;
+  border: 6px outset #C58300;
+}
+
+.gridVid {
+  width: 70%;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  margin: auto;
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.instrument_videos {
+  list-style-type: none;
+}
+
+.videopagegrid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 100px;
+}
+
+body {
+  background: url(images/hardwood.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+
+#mainhome {
+  width: 80vw;
+  background-color: white;
+  box-shadow: 4px 5px 19px -1px #190000;
+  margin: auto;
+}
+
+#maintwo {
+  width: 70vw;
+  background-color: white;
+  box-shadow: 4px 5px 19px -1px #190000;
+  margin: auto;
+}
+
+#mainfour {
+  width: 80vw;
+  height: 70vw;
+  background-color: white;
+  box-shadow: 4px 5px 19px -1px #190000;
+  margin: auto;
+}
+
+/*Begin Media Query*/
+@media screen and (min-width: 0) and (max-width: 600px) {
+  p {
+    font-size: 50px;
+  }
+
+  .gridIndex {
+    width: 90%;
+    height: 20%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    margin: auto;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spanGrid {
+    grid-column: 1 / 1;
+  }
+
+  .roundimageclass {
+    border-radius: 30%;
+    width: 50%;
+  }
+
+  .indexPageGrid main {
+    width: 100%;
+    height: 90%;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
+  nav li:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .indexPageGrid {
+    grid-template-rows: 270px 1fr 100px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
 }
